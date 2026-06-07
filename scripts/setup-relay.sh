@@ -251,7 +251,7 @@ main() {
             # Hysteria 2 link — only when Hysteria is configured
             local hysteria_link=""
             if [[ -n "$hysteria_port" ]]; then
-                hysteria_link="hysteria2://${exit_uuid}@${exit_ip}:${hysteria_port},${hysteria_port}-${hysteria_port_end}/?obfs=salamander&obfs-password=${hysteria_obfs}&sni=${exit_sni}&insecure=0#Hysteria%202"
+                hysteria_link="hysteria2://${exit_uuid}@${exit_ip}:${hysteria_port}?obfs=salamander&obfs-password=${hysteria_obfs}&sni=${exit_sni}&insecure=0#Hysteria%202"
             fi
 
             # URL-encoded XHTTP extra — sub-proxy injects into each relay VLESS URL
